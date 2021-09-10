@@ -1,0 +1,19 @@
+{
+  "name": "Checkpoint",
+  "description": "A better process for promoting models to production.",
+  "repository": "https://github.com/dominodatalab/domino-research/tree/ddl-kevin/checkpoint-heroku/checkpoint",
+  "logo": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/passport-control_1f6c2.png",
+  "keywords": ["mlops", "mlflow"],
+  "stack": "container",
+  "env": {
+    "CHECKPOINT_REGISTRY_URL": {
+      "description": "URL for Mlflow Registry."
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:hobby-dev",
+      "as": "DATABASE"
+    }
+  ]
+}
