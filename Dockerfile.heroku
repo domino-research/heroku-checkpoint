@@ -1,0 +1,2 @@
+FROM quay.io/domino/checkpoint:heroku
+CMD gunicorn -b 0.0.0.0:$PORT --log-level=info --preload checkpoint.app:app
